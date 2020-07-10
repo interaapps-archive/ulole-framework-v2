@@ -5,10 +5,10 @@
 # Ulole Framework 2 (ALPHA)
 
 ## Based on
-[ulole-core](https://github.com/interaapps/ulole-core)
-[ulole-orm](https://github.com/interaapps/ulole-orm)
-[deverm router](https://github.com/interaapps/deverm)
-[helper](https://github.com/uppm/helper)
+- [ulole-core](https://github.com/interaapps/ulole-core)
+- [ulole-orm](https://github.com/interaapps/ulole-orm)
+- [deverm router](https://github.com/interaapps/deverm)
+- [helper](https://github.com/uppm/helper)
 
 ```php
 <?php
