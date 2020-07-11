@@ -116,3 +116,62 @@ class UserTable extends Migrate {
 
 #### Debug
 ![https://i.imgur.com/W8otsxK.png](https://i.imgur.com/W8otsxK.png)
+
+## UPPM-Modules 
+
+#### DevermAnnotations
+`php uppm.php install devermannotations`
+```php
+
+// controller/TestingController.php
+class TestingController {
+    /**
+     * @modules\devermannotations\Route(route = "/hi", method = "GET")
+     */
+    public static function hello(){
+        echo "HIII";
+    }
+}
+
+// routes.php
+use modules\devermannotations\DevermAnnotations;
+use app\controller\TestingController;
+
+$deverm = new DevermAnnotations($router);
+$deverm->addClass(TestingController::class);
+$deverm->init();
+```
+
+#### PHP-HttpClient
+`php uppm.php install httprequest`
+```php
+use modules\httprequest\HttpRequest;
+
+// Simple GET-Request
+$res = HttpRequest::get("https://interaapps.de")->send();
+
+$res->getData(); // Gets the body
+$res->getCode(); // Gets the httpcode
+// ...
+
+// POST-Request with params
+$res = HttpRequest::post("https://interaapps.de")
+        ->parameter("username", "homer.simpson")
+        ->parameter("password", "ilovedonuts")
+        ->send();
+```
+
+#### GitClient
+`php uppm.php install gitclient`
+```php
+use modules\gitclient\Git;
+
+$git = new Git();
+
+$git->changeDirectory(".");
+$git->initIfNot();
+$git->setRemote("origin");
+$git->add(".");
+$git->commit("Hello, this push has been sent with the GitPHPClient by UPPM");
+$git->push("master");
+```

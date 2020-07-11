@@ -7,8 +7,6 @@ $router->get("/example", "!ExampleController@example");
 $router->get("/example/users", "!ExampleController@exampleJSONAPI");
 $router->post("/example/users", "!ExampleController@addUser");
 
-$router->get("/d/([a-z]*)", "customtest.php");
-
 $router->setPageNotFound("404.php");
 
 // Initializing the directories
