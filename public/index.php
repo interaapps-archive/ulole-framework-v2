@@ -1,6 +1,9 @@
 <?php
 chdir("..");
 require "autoload.php";
+
+// require "vendor/autoload.php";
+
 require "modules/ulole/bootstrap/bootstrap.php";
 
 

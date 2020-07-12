@@ -33,12 +33,12 @@ Currently there is no installation method for ulole-frameworkv v2
 ```bash
 php uppm.php install
 ```
-
-Update Packages:
+or composer (Not fully supported and controled)
 ```bash
-php uppm update
-```
+composer install
 
+# You have to import the autoloader in public/index.php
+```
 ## Features
 - Useful CLI with custom commands support (php cli)
 - Build in TestServer (php cli server)

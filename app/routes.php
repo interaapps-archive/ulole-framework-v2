@@ -1,7 +1,4 @@
 <?php
-use modules\helper\Str;
-
-
 $viewsDirectory    = "resources/views/";
 $templateDirectory = "resources/views/templates/";
 
