@@ -9,8 +9,8 @@
     "modules": {
         "uloleorm": "1.0.1",
         "deverm": "1.0",
-        "ulole-core": "2.0.1",
-        "helper": "1.0"
+        "ulole-core": "2.0.2",
+        "helper": "1.0.1"
     },
     "namespaces": {}
 }
