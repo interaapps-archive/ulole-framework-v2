@@ -16,7 +16,8 @@ module.exports = {
     entry: options.appJs,
     output: {
         path: options.outputPath,
-        filename: options.outputNames.js
+        filename: options.outputNames.js,
+        publicPath: "/assets/"
     },
     plugins: [
         new MiniCssExtractPlugin({
