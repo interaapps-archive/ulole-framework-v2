@@ -7,3 +7,6 @@ composer.lock
 /.idea
 
 env.json
+
+/node_modules
+package-lock.json
